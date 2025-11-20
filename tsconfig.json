@@ -23,5 +23,6 @@
     "types": ["node"]
   },
   "include": ["*.ts", "*.tsx", "components/**/*.tsx", "services/**/*.ts", "vite-env.d.ts"],
+  "exclude": ["node_modules", "vite.config.ts", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
