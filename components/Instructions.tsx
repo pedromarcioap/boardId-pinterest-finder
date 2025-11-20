@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Copy, Code, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 export const Instructions: React.FC = () => {
   return (

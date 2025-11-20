@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Cpu, Github, Search } from 'lucide-react';
+import { Code, Cpu, Search } from 'lucide-react';
 import { Instructions } from './components/Instructions';
 import { ResultCard } from './components/ResultCard';
 import { UrlHelper } from './components/UrlHelper';

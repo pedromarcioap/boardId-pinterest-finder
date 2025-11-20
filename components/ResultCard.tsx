@@ -1,5 +1,5 @@
 import React from 'react';
-import { Copy, CheckCircle, AlertCircle, Hash, User, Folder } from 'lucide-react';
+import { Copy, CheckCircle, AlertCircle, User, Folder } from 'lucide-react';
 import { ExtractionResult } from '../types';
 
 interface ResultCardProps {
