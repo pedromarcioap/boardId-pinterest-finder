@@ -4,7 +4,9 @@ import { ExtractionResult } from "../types";
 const MODEL_NAME = "gemini-2.5-flash";
 
 export const analyzeSourceCode = async (htmlSource: string): Promise<ExtractionResult> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  // Force cast to string because the build process ensures this is replaced, 
+  // or it will be undefined at runtime if missing, but TS needs to know it's a string.
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
 
   const systemInstruction = `You are a technical web scraper assistant. 
 I will provide you with the HTML source code of a Pinterest Board page.
