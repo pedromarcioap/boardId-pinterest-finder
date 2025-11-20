@@ -18,8 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    
+    "types": ["node"]
   },
-  "include": ["*.ts", "*.tsx", "components/**/*.tsx", "services/**/*.ts"],
+  "include": ["*.ts", "*.tsx", "components/**/*.tsx", "services/**/*.ts", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
