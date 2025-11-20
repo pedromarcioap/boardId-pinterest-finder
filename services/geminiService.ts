@@ -4,12 +4,7 @@ import { ExtractionResult } from "../types";
 const MODEL_NAME = "gemini-2.5-flash";
 
 export const analyzeSourceCode = async (htmlSource: string): Promise<ExtractionResult> => {
-  const apiKey = process.env.API_KEY;
-  if (!apiKey) {
-    throw new Error("API Key is missing.");
-  }
-
-  const ai = new GoogleGenAI({ apiKey });
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
   const prompt = `
     You are a technical web scraper assistant. 
