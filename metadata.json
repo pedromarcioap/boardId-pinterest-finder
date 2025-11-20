@@ -1,0 +1,5 @@
+{
+  "name": "BoardID Pinterest Finder",
+  "description": "A specialized tool powered by Gemini to extract Pinterest Board IDs from page source code.",
+  "requestFramePermissions": []
+}
